@@ -5,12 +5,12 @@ from django.contrib.auth.models import User
 
 class LoginForm(AuthenticationForm):
     username = forms.CharField(widget=forms.TextInput(attrs={
-        "placeholder": "johnsmith",
+        "placeholder": "Your username",
         "class": "w-full p-3 rounded"
     }))
 
-    password1 = forms.CharField(widget=forms.PasswordInput(attrs={
-        "placeholder": "Enter your desired password",
+    password = forms.CharField(widget=forms.PasswordInput(attrs={
+        "placeholder": "Your password",
         "class": "w-full p-3 rounded"
     }))
 
